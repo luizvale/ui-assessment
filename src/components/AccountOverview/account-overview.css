@@ -1,0 +1,13 @@
+.account-overview {
+  display: flex;
+  flex: 1 1 45%;
+  font-size: 1vw;
+  align-items: center;
+}
+
+
+.title {
+  color: #333333; /* Cor aproximada do texto */
+  margin: 2%;
+  font-size: 3vw;
+}

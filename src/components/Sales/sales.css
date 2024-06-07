@@ -1,0 +1,35 @@
+.sales {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.sales-inner {
+  background-color: white;
+  border-radius: 8px;
+  box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.sales-content {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sales-text {
+  font-size: 2vw;
+  color: #333333;
+  padding: 1em 1.2em;
+
+}
+
+.upload-icon {
+  padding-right: .5em;
+}
+
+.upload-info {
+  font-size: 2vw;
+  padding: 0 1.2em;
+  margin-top: 0;
+
+}

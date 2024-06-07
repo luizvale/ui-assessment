@@ -1,0 +1,28 @@
+.upload-stats {
+    display: flex;
+    padding-left: 1em;
+  }
+
+  .lines-saved {
+    text-align: left;
+    width: 50%;
+    padding-left: 1em;
+  }
+
+  .upload-success {
+    text-align: left;
+    border-right: 2px solid #ddd;
+    width: 50%;
+  }
+
+  .upload-stats div h2 {
+    font-size: 4vw;
+    color: green;
+    margin-bottom: 0;
+  }
+
+  .upload-stats div p {
+    color: #999;
+    margin-top: 0;
+    font-size: 2vw;
+  }
