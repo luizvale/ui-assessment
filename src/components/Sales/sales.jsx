@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import UploadStats from '../UploadStats/upload-stats';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
@@ -10,14 +11,22 @@ const Sales = ({ data }) => {
       <div className="sales-inner">
         <div className='sales-content'>
           <strong className='sales-text'>
-          <FontAwesomeIcon className='upload-icon' icon={faUpload} style={{color: "#0096ff",}} />
-            Sales</strong>
-          <p className='upload-info'>You had {4} uploads and {5} lines added.</p>
+            <FontAwesomeIcon className='upload-icon' icon={faUpload} style={{color: "#0096ff",}} />
+            Sales
+          </strong>
+          <p className='upload-info'>You had {data.uploads} uploads and {data.linesSaved} lines added.</p>
         </div>
-        <UploadStats/>
+        <UploadStats />
       </div>
     </div>
   );
 }
+
+Sales.propTypes = {
+  data: PropTypes.shape({
+    uploads: PropTypes.number.isRequired,
+    linesSaved: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default Sales;
