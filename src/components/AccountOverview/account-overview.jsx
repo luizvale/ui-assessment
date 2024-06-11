@@ -27,6 +27,8 @@ AccountOverview.propTypes = {
     }).isRequired,
     salesOverview: PropTypes.shape({
       uploads: PropTypes.number.isRequired,
+      successfulUploads: PropTypes.number.isRequired,
+      linesAttempted: PropTypes.number.isRequired,
       linesSaved: PropTypes.number.isRequired,
     }).isRequired,
   }).isRequired,

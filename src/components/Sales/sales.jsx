@@ -14,9 +14,9 @@ const Sales = ({ data }) => {
             <FontAwesomeIcon className='upload-icon' icon={faUpload} style={{color: "#0096ff",}} />
             Sales
           </strong>
-          <p className='upload-info'>You had {data.uploads} uploads and {data.linesSaved} lines added.</p>
+          <p className='upload-info'>You had {data.successfulUploads} uploads and {data.linesSaved} lines added.</p>
         </div>
-        <UploadStats uploadSuccess={data.uploads} linesSaved={data.linesSaved} />
+        <UploadStats uploadSuccess={data.uploads} linesSaved={data.linesAttempted} />
       </div>
     </div>
   );
@@ -24,6 +24,8 @@ const Sales = ({ data }) => {
 
 Sales.propTypes = {
   data: PropTypes.shape({
+    successfulUploads: PropTypes.number.isRequired,
+    linesAttempted: PropTypes.number.isRequired,
     uploads: PropTypes.number.isRequired,
     linesSaved: PropTypes.number.isRequired,
   }).isRequired,
