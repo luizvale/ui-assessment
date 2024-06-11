@@ -16,7 +16,7 @@ const Sales = ({ data }) => {
           </strong>
           <p className='upload-info'>You had {data.uploads} uploads and {data.linesSaved} lines added.</p>
         </div>
-        <UploadStats />
+        <UploadStats uploadSuccess={data.uploads} linesSaved={data.linesSaved} />
       </div>
     </div>
   );
